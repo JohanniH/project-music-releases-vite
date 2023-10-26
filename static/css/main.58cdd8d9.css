@@ -1,0 +1,146 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 25px 50px
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+.album-wrapper {
+    grid-gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+.album {
+    margin: 10px
+}
+
+@media (min-width: 667px) {
+    .album-wrapper {
+        grid-template-columns:1fr 1fr
+    }
+}
+
+@media (min-width: 1025px) {
+    .album-wrapper {
+        grid-template-columns:1fr 1fr 1fr 1fr
+    }
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%
+}
+
+.icon {
+    background: transparent;
+    width: 35px
+}
+
+.play {
+    width: 45px
+}
+
+button {
+    border: none
+}
+
+svg {
+    fill: #fff
+}
+
+.icon:hover {
+    scale: 1.3
+}
+
+@media (min-width: 667px) {
+    .icon-wrapper {
+        gap:20px
+    }
+
+    .icon {
+        width: 40px
+    }
+
+    .play {
+        width: 50px
+    }
+}
+
+@media (min-width: 1025px) {
+    .icon-wrapper {
+        gap:8px
+    }
+}
+
+.cover-image-wrapper {
+    position: relative
+}
+
+img {
+    height: auto;
+    max-width: 600px;
+    width: 100%
+}
+
+.cover-image-wrapper:hover>.icon-wrapper {
+    opacity: 1;
+    transition: .4s
+}
+
+.cover-image-wrapper:hover>img {
+    opacity: .4;
+    transition: .4s
+}
+
+.artistName h3 {
+    color: #a0a0a0;
+    font-family: Helvetica,sans-serif;
+    font-size: 14px
+}
+
+.artistName a {
+    text-decoration: none
+}
+
+.artistName a:hover {
+    color: #a0a0a0;
+    text-decoration: underline
+}
+
+.albumName h2 {
+    color: #fff;
+    font-family: Helvetica,sans-serif;
+    font-size: 14px
+}
+
+.albumName a {
+    text-decoration: none
+}
+
+.albumName a:hover {
+    color: #a0a0a0;
+    text-decoration: underline
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    font-family: Helvetica,sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 2em
+}
+
+/*# sourceMappingURL=main.58cdd8d9.css.map*/
